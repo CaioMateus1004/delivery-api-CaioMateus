@@ -19,6 +19,9 @@ import com.deliverytech.delivery.model.Pedido;
 import com.deliverytech.delivery.model.Produto;
 import com.deliverytech.delivery.model.Restaurante;
 import com.deliverytech.delivery.model.StatusPedido;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import com.deliverytech.delivery.Service.ClienteService;
 import com.deliverytech.delivery.Service.PedidoService;
 import com.deliverytech.delivery.Service.ProdutoService;
@@ -27,6 +30,7 @@ import com.deliverytech.delivery.Service.RestauranteService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
+@Tag(name = "Pedidos", description = "Endpoint de pedidos")
 @RestController
 @RequestMapping("/api/pedidos")
 @RequiredArgsConstructor

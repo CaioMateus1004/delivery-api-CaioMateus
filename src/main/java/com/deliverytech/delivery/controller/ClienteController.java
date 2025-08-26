@@ -3,6 +3,9 @@ package com.deliverytech.delivery.controller;
 import com.deliverytech.delivery.dto.request.ClienteRequest;
 import com.deliverytech.delivery.dto.response.ClienteResponse;
 import com.deliverytech.delivery.model.Cliente;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import com.deliverytech.delivery.Service.ClienteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +15,7 @@ import jakarta.validation.Valid;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Tag(name = "Clientes", description = "Endpoint de clientes")
 @RestController
 @RequestMapping("/api/clientes")
 @RequiredArgsConstructor
