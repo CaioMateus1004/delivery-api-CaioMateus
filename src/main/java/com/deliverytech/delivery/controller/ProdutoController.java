@@ -18,12 +18,16 @@ import com.deliverytech.delivery.dto.request.ProdutoRequest;
 import com.deliverytech.delivery.dto.response.ProdutoResponse;
 import com.deliverytech.delivery.model.Produto;
 import com.deliverytech.delivery.model.Restaurante;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import com.deliverytech.delivery.Service.ProdutoService;
 import com.deliverytech.delivery.Service.RestauranteService;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
+@Tag(name = "Produtos", description = "Endpoint de produtos")
 @RestController
 @RequestMapping("/api/produtos")
 @RequiredArgsConstructor
