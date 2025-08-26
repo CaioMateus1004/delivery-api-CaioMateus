@@ -25,7 +25,7 @@ public class RestauranteRequest {
     private String categoria;
 
     @NotBlank
-    @Schema(description = "Telefone do restaurante", example = "99 6666-6666")
+    @Schema(description = "Telefone do restaurante", example = "9966666666")
     private String telefone;
 
     @Positive

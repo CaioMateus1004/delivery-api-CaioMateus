@@ -10,7 +10,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Schema(description = "Representa um produto do catálogo do Restaurante", example = "{\"id\":1,\"nome\":\"Calabresa\",\"categoria\":2,\"descricao\":\"Linguiça Calabresa\",\"preco\":10.50,\"disponivel\":true}")
+@Schema(description = "Representa um produto do catálogo do Restaurante", 
+example = "{\"id\":1,\"nome\":\"Calabresa\",\"categoria\":2,\"descricao\":\"Linguiça Calabresa\",\"preco\":10.50,\"disponivel\":true}")
 public class ProdutoResponse {
     @Schema(description = "Identificador unico do produto", example = "1")
     private Long id;
