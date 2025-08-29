@@ -21,6 +21,7 @@ import com.deliverytech.delivery.model.Restaurante;
 import com.deliverytech.delivery.model.StatusPedido;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
+import io.swagger.v3.oas.annotations.Operation;
 
 import com.deliverytech.delivery.Service.ClienteService;
 import com.deliverytech.delivery.Service.PedidoService;
@@ -42,6 +43,7 @@ public class PedidoController {
         private final ProdutoService produtoService;
 
         @PostMapping
+        @Operation(summary = "Criar um novo pedido")
         public ResponseEntity<PedidoResponse> criar(@Valid @RequestBody PedidoRequest request) {
                 Cliente cliente = clienteService.buscarPorId(request.getClienteId())
                                 .orElseThrow(() -> new RuntimeException("Cliente não encontrado"));

@@ -17,22 +17,27 @@ import lombok.NoArgsConstructor;
 public class ProdutoRequest {
 
     @NotBlank
-    @Schema(description = "Nome do produto", example = "pizza 4 queijos")
+    @Schema(description = "Nome do produto", 
+    example = "pizza 4 queijos")
     private String nome;
 
     @NotBlank
-    @Schema(description = "Categoria do produto", example = "pizza")
+    @Schema(description = "Categoria do produto", 
+    example = "pizza")
     private String categoria;
 
     @NotBlank
-    @Schema(description = "Descrição detalhada do produto", example = "Pizza 4 queijos - Muçarela, Parmesão, Catupiry, Provolone")
+    @Schema(description = "Descrição detalhada do produto", 
+    example = "Pizza 4 queijos - Muçarela, Parmesão, Catupiry, Provolone")
     private String descricao;
 
     @DecimalMin("0.01")
     @DecimalMax("5000.0")
-    @Schema(description = "Preço em Reais (R$) do produto", example = "49.90")
+    @Schema(description = "Preço em Reais (R$) do produto", 
+    example = "49.90")
     private BigDecimal preco;
 
-    @Schema(description = "Identificador unico do restaurante", example = "1")
+    @Schema(description = "Identificador unico do restaurante", 
+    example = "1")
     private Long restauranteId;
 }

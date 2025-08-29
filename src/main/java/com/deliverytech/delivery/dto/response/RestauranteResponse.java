@@ -10,7 +10,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @NoArgsConstructor
 @AllArgsConstructor
 @Schema(description = "Representa um restaurante registrado no sistema", 
-example = "{\"id\":1,\"nome\":\"Restaurante do mar\",\"categoria\":\"frutos do mar\",\"telefone\":\"4411223344\",\"taxa de entrega\":12.00,\"tempo de entrega\":45,\"disponivel\":true}")
+example = "{\"id\":1,\"nome\":\"Restaurante do mar\",\"categoria\":\"frutos do mar\",\"telefone\":\"(44)1122-3344\",\"taxa de entrega\":12.00,\"tempo de entrega\":45,\"disponivel\":true}")
 public class RestauranteResponse {
     @Schema(description = "Identificador unico do restaurante", example = "1")
     private Long id;
@@ -21,7 +21,7 @@ public class RestauranteResponse {
     @Schema(description = "Categoria do restaurante", example = "brasileira")
     private String categoria;
 
-    @Schema(description = "Telefone do restaurante", example = "9966666666")
+    @Schema(description = "Telefone do restaurante", example = "(99)6666-6666")
     private String telefone;
 
     @Schema(description = "Taxa de entrega em Reais (R$)", example = "5.50")
