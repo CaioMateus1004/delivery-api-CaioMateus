@@ -47,7 +47,7 @@ Projeto completo - Delivery Tech.
 - Profile: development
 
 ## 🏃‍♂️ Instruções de execução
-1. Abrir um terminal (cmd ou powershell) e executar o comando "mvn clean install"
+1. Abrir um terminal (cmd ou powershell), localizar o diretório da api: "/delivery", e executar o comando "mvn clean install"
 2. Após isso, usar o comando "mvn spring-boot:run". Caso tenha o docker instalado na máquina, execute o comando "docker compose up --build"
 3. Abrir o navegador e na URL digitar "http://localhost:8080/"
 4. Para acessar o swagger usar a URL "http://localhost:8080/swagger-ui/index.html"
@@ -56,4 +56,4 @@ Projeto completo - Delivery Tech.
 
 ## 👨‍💻 Desenvolvedor
 Caio Mateus Paiva Gouveia - Arquitetura de Sistemas  
-Desenvolvido com JDK 21 e Spring Boot 3.5.5
+Desenvolvido com Java 21 e Spring Boot 3.5.5
