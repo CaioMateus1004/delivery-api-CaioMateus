@@ -36,4 +36,8 @@ public class Cliente {
     
     @Builder.Default
     private LocalDateTime dataCriacao = LocalDateTime.now();
+
+    public boolean isValido() {
+        return nome != null && !nome.trim().isEmpty();
+    }
 }

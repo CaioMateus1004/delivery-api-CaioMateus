@@ -41,4 +41,8 @@ public class Usuario {
     private LocalDateTime dataCriacao = LocalDateTime.now();
     
     private Long restauranteId;
+
+    public boolean isValido() {
+        return nome != null && !nome.trim().isEmpty();
+    }
 }

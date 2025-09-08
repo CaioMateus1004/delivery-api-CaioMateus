@@ -26,6 +26,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class Pedido {
+    public static final String StatusPedido = null;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -37,6 +39,7 @@ public class Pedido {
     @ManyToOne
     @JoinColumn(name = "restaurante_id")
     private Restaurante restaurante;
+    
     private BigDecimal total;
 
     @Enumerated(EnumType.STRING)
@@ -50,4 +53,5 @@ public class Pedido {
     
     @Embedded
     private Endereco enderecoEntrega;
+
 }

@@ -34,4 +34,8 @@ public class ItemPedido {
     private Integer quantidade;
 
     private BigDecimal precoUnitario;
+
+    boolean isValid() {
+        return quantidade != null && quantidade > 0 && produto != null && produto.getPreco() != null;
+    }
 }

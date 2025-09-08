@@ -15,7 +15,7 @@ Projeto completo - Delivery Tech.
 - Restaurantes
 - Produtos
 - Pedidos
-- Entregas
+
 
 ## 📋 Endpoints
 1. **Para usuários/clientes**
@@ -47,15 +47,16 @@ Projeto completo - Delivery Tech.
 - Banco: H2 em memória
 - Profile: development
 
+
 ## 🏃‍♂️ Instruções de execução
 1. Ter instalado na máquina: Java 21, Maven, e o Docker
-2. Abrir um terminal (cmd ou powershell), localizar o diretório da api: "/delivery", e executar o comando "mvn clean install"
+2. Abrir um terminal (cmd, powershell ou do VSCode), localizar o diretório da api: "/delivery", e executar o comando "mvn clean install"
 3. Realizar os testes com o comando "mvn test"
-4. Para acessar o relatório do Jacoco, usar o comando "mvn jacoco:report"
-5. Para subir o monitoramento via docker, deve-se usar o comando "docker-compose -f monitoring" ou "docker-compose.yml up -d". Ou coso queira usar o Maven, o comando é "mvn spring-boot:run"
-6. Abrir o navegador e na URL digitar "http://localhost:8080/"
-7. Para acessar o swagger usar a URL "http://localhost:8080/swagger-ui/index.html"
-8. Para encerrar a operação: No terminal, para o spring-boot, apertar Ctrl+C e confirmar o encerramento com um "S". Para o docker, no terminal, apertar Ctrl+C e envair o seguinte código "docker compose down"
+4. Para gerar um relatório de teste Jacoco, usar o comando "mvn jacoco:report"
+5. Para subir o monitoramento via docker, deve-se usar o comando "docker-compose -f monitoring"/"docker-compose.yml up -d"/ou "docker compose up --build". Ou caso queira realizar apenas o teste via maven spring-boot, o comando é "mvn spring-boot:run"
+6. Abrir o navegador e na URL digitar "http://localhost:8080/", verificando se o programa está funcionando
+7. Para acessar o swagger usar a URL "http://localhost:8080/swagger-ui/index.html" e fazer os testes de endpoints
+8. Para encerrar a operação: No terminal, aperte as teclas Ctrl+C e confirme o encerramento enviando o seguinte código "docker compose down". Para os testes usando spring-boot, aperte as mesmas teclas, e confirme com um "S"
 
 
 ## 👨‍💻 Desenvolvedor
